@@ -50,7 +50,7 @@ Apresentar as práticas de Design de Código e como elas podem facilitar o desen
 
 ### Resumo
 
-O que veremos na aula de hoje?
+O que veremos na aula?
 - Conceitos básicos de design de código, sua importância e práticas recomendadas.
 - Princípios de design de código como SOLID, DRY, KISS, e exemplos práticos.
 - Princípios de "Clean Code" de Robert C. Martin, legibilidade e técnicas de limpeza de código.
