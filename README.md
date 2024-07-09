@@ -56,7 +56,6 @@ O que veremos na aula?
 - Conceitos, benefícios e tipos de padrões de design (criação, estruturais, comportamentais).
 - Padrões Factory, Adapter e Observer.
 - Interseção entre padrões de design e arquitetura de software, influência na estrutura e organização.
-- Aplicação de inteligência artificial para melhorar o desempenho e realizar análises aplicáveis ao design de código.
 
 ***
 
