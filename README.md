@@ -52,12 +52,10 @@ Apresentar as práticas de Design de Código e como elas podem facilitar o desen
 
 O que veremos na aula?
 
-- Conceitos básicos de design de código, sua importância e práticas recomendadas.
-- Princípios de design de código como SOLID, DRY, KISS, e exemplos práticos.
-- Princípios de "Clean Code" de Robert C. Martin, legibilidade e técnicas de limpeza de código.
+- Design de código, princípios e Clean Code
 - Conceitos, benefícios e tipos de padrões de design (criação, estruturais, comportamentais).
 - Padrões Factory, Adapter e Observer.
-- Interseção entre padrões de design e arquitetura de software, influência na estrutura e organização, e impacto na escalabilidade e manutenibilidade.
+- Interseção entre padrões de design e arquitetura de software, influência na estrutura e organização.
 - Aplicação de inteligência artificial para melhorar o desempenho e realizar análises aplicáveis ao design de código.
 
 ***
@@ -71,13 +69,13 @@ O que veremos na aula?
 * [Exercício para sala](/exercicios/para-sala/)
 * [Exercício para casa](/exercicios/para-casa/)
 
-### Links Úteis
-
-[Links para se aprofundar nos conteúdos](/material/Links.md)
-
 ### Desafio da Semana
 
 [Projeto Integrador](/material/Desafio%20da%20Semana%20-%20Projeto%20Integrador.md)
+
+### Links Úteis
+
+[Links para se aprofundar nos conteúdos](/material/Links.md)
 
 ***
 
