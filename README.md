@@ -27,7 +27,7 @@ Fui aluna do curso de Frontend da {reprograma} em 2019! Desde então, atuo na á
 
 * IDE VS Code
 * Node.js 
-* Animação e participação ativa neste sabadão!
+* Animação e participação ativa na aula!
 
 ***
 
