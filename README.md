@@ -70,7 +70,7 @@ O que veremos na aula?
 
 ### Desafio da Semana
 
-[Projeto Integrador](/material/Desafio%20da%20Semana%20-%20Projeto%20Integrador.md)
+[Projeto Integrador](/material/Desafio%20Semanal%20-%20Projeto%20Integrador.md)
 
 ### Links Úteis
 
