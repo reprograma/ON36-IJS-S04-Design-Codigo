@@ -8,7 +8,7 @@ export class AccountsService {
   private readonly filePath = path.resolve('src/accounts/accounts.json');
   private idCounter: number;
 
-  constructor(private readonly accountsService: AccountsService) {
+  constructor() {
     const accounts = this.readAccounts();
     this.idCounter = accounts.length > 0 ? accounts[accounts.length - 1].id + 1 : 1;
   }
