@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "BrasilBank",
+    "balance": 1000
+  },
+  {
+    "id": 2,
+    "name": "SPPBank",
+    "balance": 434
+  }
+]
