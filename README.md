@@ -68,10 +68,6 @@ O que veremos na aula?
 * [Exercício para sala](/exercicios/para-sala/)
 * [Exercício para casa](/exercicios/para-casa/)
 
-### Desafio da Semana
-
-[Projeto Integrador](/material/Desafio%20Semanal%20-%20Projeto%20Integrador.md)
-
 ### Links Úteis
 
 [Links para se aprofundar nos conteúdos](/material/Links.md)
