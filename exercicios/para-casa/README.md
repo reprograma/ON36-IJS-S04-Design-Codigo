@@ -1,19 +1,19 @@
 # Exercício de Casa 🏠 
 
-## Nome do Exercicio
+### Objetivos de aprendizagem do desafio 🎯
 
-- Explicação do exercício: 
-[CONTEUDO] 
----
+- Explorar práticas recomendadas para criar um design de código claro e eficiente
+- Aplicar SOLID, DRY e KISS
+- Implementar padrões de código PD_Factory, PD_Adapter, PD_Observer
+- Identificar como os padrões de design influenciam a estrutura e organização de um sistema.
 
-Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
+<h2 align=center> {Reprograma}Bank </h2>
+  <h3>melhorando nossa aplicação</h3>
 
-- [ ] Fiz o fork do repositório.
-- [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Criei minha branch (` git checkout -b nome-sobrenome `)
-- [ ] Criei a pasta com o meu nome dentro da pasta entregas (` mkdir nome-sobrenome`)
-- [ ] Resolvi o exercício dentro da minha pasta. Como no [exemplo](/on21-imersao-js-S1-TDD/exercicios/para-casa/entregas/exemplo-nome-sobrenome/).
-- [ ] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushei os commits na minha branch (`git push origin nome-da-branch`)
-- [ ] Criei um Pull Request seguindo as orientações que estao nesse [documento](/on21-imersao-js-S1-TDD/exercicios/para-casa/instrucoes-pull-request.md).
+Nesta semana, o desafio é refatorar a aplicação desenvolvida anteriormente, aplicando práticas recomendadas para criar um design de código claro e eficiente. Além disso, serão aplicados os princípios SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion), DRY (Don't Repeat Yourself), KISS (Keep It Simple, Stupid) e alguns padrões de design, como Factory, Adapter e Observer.
+
+Atenção:
+Se desejar você pode criar mais classes ou refinar mais as passadas acima
+Crie a branch feature/semana-4 para entregar suas classes
+Envie aqui o link da sua branch
+Não esqueça de adicionar o PR pra main na tabela de code review
