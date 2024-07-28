@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { SavingsAccount } from '../models/savings-account.model';
 import { CheckingAccount } from '../models/checking-account.model';
 import { Account } from '../models/account.model';
-import { AccountType } from '../models/account-type.enum';
+import { AccountType } from '../enums/account-type.enum';
 
 @Injectable()
 export class AccountFactory {

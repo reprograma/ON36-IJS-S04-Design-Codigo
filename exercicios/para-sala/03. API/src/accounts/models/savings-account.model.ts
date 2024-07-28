@@ -1,5 +1,5 @@
 import { Account } from './account.model';
-import { AccountType } from './account-type.enum';
+import { AccountType } from '../enums/account-type.enum';
 
 export class SavingsAccount implements Account {
   type = AccountType.Savings;

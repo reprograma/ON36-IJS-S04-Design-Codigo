@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
 import { Account } from './models/account.model';
-import { AccountType } from './models/account-type.enum';
+import { AccountType } from './enums/account-type.enum';
 import { AccountFactory } from './factories/account.factory';
 
 @Injectable()

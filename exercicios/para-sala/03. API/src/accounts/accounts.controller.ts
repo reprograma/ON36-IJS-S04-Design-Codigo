@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, Put, Patch, Delete, ParseIntPipe } from '@nestjs/common';
 import { AccountsService } from './accounts.service';
 import { Account } from './models/account.model';
-import { AccountType } from './models/account-type.enum';
+import { AccountType } from './enums/account-type.enum';
 
 @Controller('accounts')
 export class AccountsController {
