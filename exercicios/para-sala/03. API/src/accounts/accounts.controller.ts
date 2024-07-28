@@ -1,14 +1,15 @@
 import { Controller, Get, Post, Body, Param, Put, Patch, Delete, ParseIntPipe } from '@nestjs/common';
 import { AccountsService } from './accounts.service';
-import { Account } from './account.model';
+import { Account } from './models/account.model';
+import { AccountType } from './models/account-type.enum';
 
 @Controller('accounts')
 export class AccountsController {
   constructor(private readonly accountsService: AccountsService) {}
 
   @Post()
-  createAccount(@Body('name') name: string, @Body('balance') balance: number): Account {
-    return this.accountsService.createAccount(name, balance);
+  createAccount(@Body('name') name: string, @Body('balance') balance: number, @Body('type') type: AccountType): Account {
+    return this.accountsService.createAccount(name, balance, type);
   }
 
   @Get()

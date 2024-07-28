@@ -1,12 +1,15 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
-import { Account } from './account.model';
+import { Account } from './models/account.model';
+import { AccountType } from './models/account-type.enum';
+import { AccountFactory } from './factories/account.factory';
 
 @Injectable()
 export class AccountsService {
   private readonly filePath = path.resolve('src/accounts/accounts.json');
   private idCounter: number;
+  private accountFactory: AccountFactory;
 
   constructor() {
     const accounts = this.readAccounts();
@@ -50,14 +53,15 @@ export class AccountsService {
     return accountToUpdate;
   }
 
-  createAccount(name: string, balance: number): Account {
+  createAccount(name: string, balance: number, type: AccountType): Account {
     const listOfAccounts = this.readAccounts();
 
-    const newAccount: Account = {
-      id: this.idCounter++,
+    const newAccount = this.accountFactory.createAccount(
+      type,
+      this.idCounter,
       name,
       balance,
-    };
+    );
 
     listOfAccounts.push(newAccount);
     this.writeAccounts(listOfAccounts);
