@@ -1,4 +1,4 @@
-import { Account } from './account.model';
+import { Account } from './account.interface';
 import { AccountType } from '../enums/account-type.enum';
 
 export class SavingsAccount implements Account {

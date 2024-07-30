@@ -1,19 +1,22 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
-import { Account } from './models/account.model';
-import { AccountType } from './enums/account-type.enum';
+import { Account } from './models/account.interface';
 import { AccountFactory } from './factories/account.factory';
+import { AccountType } from './enums/account-type.enum';
+import { AccountAdapter } from './adapters/account-adapter';
 
 @Injectable()
 export class AccountsService {
   private readonly filePath = path.resolve('src/accounts/services/accounts.json');
   private idCounter: number;
-  
-  constructor(private accountFactory: AccountFactory) {
+
+  constructor(
+    private readonly accountFactory: AccountFactory,
+    private readonly accountAdapter: AccountAdapter
+  ) {
     const accounts = this.readAccounts();
     this.idCounter = accounts.length > 0 ? accounts[accounts.length - 1].id + 1 : 1;
-
   }
 
   private readAccounts(): Account[] {
@@ -83,5 +86,16 @@ export class AccountsService {
     listOfAccounts.splice(indexOfAccount, 1);
 
     this.writeAccounts(listOfAccounts);
+  }
+
+  getCreditCheckFormat(accountId: number) {
+    const listOfAccounts = this.readAccounts();
+    const account = listOfAccounts.find(account => account.id === accountId);
+    if (!account) {
+      throw new Error('Account not found');
+    }
+
+    const adapter = this.accountAdapter.createAdapter(account);
+    return adapter.toCreditCheckFormat();
   }
 }

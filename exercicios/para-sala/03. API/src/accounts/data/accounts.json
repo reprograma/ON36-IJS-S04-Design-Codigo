@@ -8,11 +8,5 @@
     "id": 2,
     "name": "SPPBank",
     "balance": 434
-  },
-  {
-    "id": 3,
-    "name": "Nome",
-    "balance": 0,
-    "type": "Savings"
   }
 ]

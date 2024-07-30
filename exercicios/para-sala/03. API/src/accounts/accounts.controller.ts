@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Param, Put, Patch, Delete, ParseIntPipe } from '@nestjs/common';
 import { AccountsService } from './accounts.service';
-import { Account } from './models/account.model';
+import { Account } from './models/account.interface';
 import { AccountType } from './enums/account-type.enum';
 
 @Controller('accounts')
@@ -37,5 +37,10 @@ export class AccountsController {
   @Delete(':id')
   removeAccount(@Param('id', ParseIntPipe) id: number): void {
     return this.accountsService.removeAccount(id);
+  }
+
+  @Get(':id/credit-check')
+  exportForCreditCheck(@Param('id') id: number): any {
+    return this.accountsService.getCreditCheckFormat(id);
   }
 }
