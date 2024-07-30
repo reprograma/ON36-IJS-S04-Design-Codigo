@@ -9,3 +9,46 @@ Você precisa adaptar suas classes `SavingsAccount` e `CheckingAccount` para que
 ### Solução
 A implementação do padrão Adapter permite que o sistema converta dados de contas no formato necessário para integração com o serviço de verificação de crédito de terceiros.
 
+```lua
++----------------------------+
+|        AccountAdapter      |
++----------------------------+
+| + adapt(account: Account): AccountCreditCheckAdapter |
++----------------------------+
+            |
+            | adapts
+            v
++-----------------------------+
+| AccountCreditCheckAdapter   |
++-----------------------------+
+| + checkCredit(): void       |
++-----------------------------+
+            ^
+            |
+            | implements
++------------------------------+    +------------------------------+
+| SavingsAccountAdapter       |    | CheckingAccountAdapter      |
++------------------------------+    +------------------------------+
+| + checkCredit(): void       |    | + checkCredit(): void       |
++------------------------------+    +------------------------------+
+
++---------------------+
+|      Account        |
++---------------------+
+| + id: number        |
+| + name: string      |
+| + balance: number   |
+| + type: AccountType |
++---------------------+
+            ^
+            |
+            |
++---------------------+   +---------------------+
+| SavingsAccount      |   | CheckingAccount     |
++---------------------+   +---------------------+
+| + id: number        |   | + id: number        |
+| + name: string      |   | + name: string      |
+| + balance: number   |   | + balance: number   |
+| + type: AccountType |   | + type: AccountType |
++---------------------+   +---------------------+
+```
