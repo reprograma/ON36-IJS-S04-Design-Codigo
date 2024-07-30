@@ -8,7 +8,7 @@ import { AccountAdapter } from './adapters/account-adapter';
 
 @Injectable()
 export class AccountsService {
-  private readonly filePath = path.resolve('src/accounts/services/accounts.json');
+  private readonly filePath = path.resolve('src/accounts/data/accounts.json');
   private idCounter: number;
 
   constructor(
